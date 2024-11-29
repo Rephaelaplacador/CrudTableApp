@@ -10,11 +10,11 @@ function App() {
   useEffect(() => {
     const savedRows = localStorage.getItem("crudRows");
     if (savedRows) {
-      setRows(JSON.parse(savedRows));
+      setRows(JSON.parse(savedRows)); // Parse the saved data and set it to state
     }
   }, []);
 
-  
+  // Save rows to local storage whenever rows are updated
   useEffect(() => {
     localStorage.setItem("crudRows", JSON.stringify(rows));
   }, [rows]);
