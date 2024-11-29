@@ -6,15 +6,15 @@ function App() {
   const [form, setForm] = useState({ name: "", age: "" });
   const [editIndex, setEditIndex] = useState(null);
 
-  // Load data from local storage when the app is loaded
+  
   useEffect(() => {
     const savedRows = localStorage.getItem("crudRows");
     if (savedRows) {
-      setRows(JSON.parse(savedRows)); // Parse the saved data and set it to state
+      setRows(JSON.parse(savedRows)); 
     }
   }, []);
 
-  // Save rows to local storage whenever rows are updated
+
   useEffect(() => {
     localStorage.setItem("crudRows", JSON.stringify(rows));
   }, [rows]);
