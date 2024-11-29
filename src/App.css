@@ -9,7 +9,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Form Styling */
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -93,7 +93,7 @@ button:hover {
   background-color: #c82333;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .crud-table {
     width: 95%;
